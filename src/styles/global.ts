@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle } from 'styled-components'
 
 export const GlobalStyle = createGlobalStyle`
 :focus {
@@ -23,4 +23,4 @@ body, input, button, textarea {
   font-weight: 400;
   font-size: 1rem;
 }
-`;
+`
