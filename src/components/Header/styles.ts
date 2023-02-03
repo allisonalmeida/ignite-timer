@@ -1,13 +1,11 @@
 import styled from 'styled-components'
 
 export const HeaderContainer = styled.header`
-  border: 1px solid #ffa7c4;
   display: flex;
   align-items: center;
   justify-content: space-between;
 
   nav {
-    border: 1px solid #ffa7c4;
     display: flex;
     gap: 0.5rem;
 
