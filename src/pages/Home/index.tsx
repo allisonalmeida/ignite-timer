@@ -49,7 +49,7 @@ export function Home() {
           <span>0</span>
         </CoutdownContainer>
 
-        <StartCoutdownButton disabled type="submit">
+        <StartCoutdownButton type="submit">
           <Play size={24} />
           Começar
         </StartCoutdownButton>
