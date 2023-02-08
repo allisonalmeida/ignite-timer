@@ -82,7 +82,7 @@ export const Separator = styled.div`
   justify-content: center;
 `
 
-export const StartCoutdownButton = styled.button`
+export const BaseCoutdownButton = styled.button`
   width: 100%;
   border: 0;
   padding: 1rem;
@@ -93,16 +93,25 @@ export const StartCoutdownButton = styled.button`
   justify-content: center;
   gap: 0.5rem;
   font-weight: bold;
-
-  cursor: pointer;
   color: ${(props) => props.theme['gray-100']};
-  background: ${(props) => props.theme['green-500']};
+  cursor: pointer;
 
   &:disabled {
     opacity: 0.7;
     cursor: not-allowed;
   }
+`
+export const StartCoutdownButton = styled(BaseCoutdownButton)`
+  background: ${(props) => props.theme['green-500']};
+
   &:not(:disabled):hover {
     background: ${(props) => props.theme['green-700']};
+  }
+`
+export const StopCoutdownButton = styled(BaseCoutdownButton)`
+  background: ${(props) => props.theme['red-500']};
+
+  &:not(:disabled):hover {
+    background: ${(props) => props.theme['red-700']};
   }
 `
